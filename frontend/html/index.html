@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>HomeScreen</title>
+	<link rel="stylesheet" href="/css/style.css">
+	<script src="/js/jquery-2.1.1.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/js/socket.js"></script>
+</head>
+
+<body id="home" class="body">
+	<h1 id="title" class="title">Hello World</h1>
+	<h2 class="home-title">Who's home?</h2>
+	<ul class="home-list" id="list">
+		<li class="home-list-entry js-empty">Only you</li>
+		<li class="home-list-entry js-template">
+			<span class="home-list-entry-name js-name">Name</span> <span class="home-list-entry-time">(<span class="js-time">00:00</span>)</span>
+		</li>
+	</ul>
+</body>
+</html>

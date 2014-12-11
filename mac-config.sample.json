@@ -1,0 +1,8 @@
+{
+	"Username": {
+	    "devices": {
+	        "device-name": "00:00:00:00:00:00"
+	    },
+	    "speech": "Optional speech text"
+	}
+}

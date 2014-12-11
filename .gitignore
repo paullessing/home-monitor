@@ -1,0 +1,7 @@
+/mac-config.json
+/node_modules
+.jshintrc
+.project
+.settings
+.tern-project
+*.scssc
