@@ -1,0 +1,13 @@
+{
+	"name": "home-monitor",
+	"version": "0.0.1",
+	"description": "Monitor MAC addresses to find out who's home.",
+	"main": "app",
+	"dependencies": {
+		"bl": "~0.9.3",
+		"express": "~4.10.4",
+		"extend": "~2.0.0",
+		"socket.io": "~1.2.1",
+		"underscore": "~1.7.0"
+	}
+}
