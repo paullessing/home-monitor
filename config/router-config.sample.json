@@ -1,0 +1,5 @@
+{
+	"hostname": "10.0.0.1",
+	"auth": "user:pass",
+	"path": "/Status_Wireless.live.asp"
+}
