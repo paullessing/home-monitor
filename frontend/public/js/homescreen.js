@@ -93,7 +93,7 @@ $(function() {
 	function addListEntry(user) {
 		var entry = templates.listEntry.clone();
 		entry.find('.js-name').text(user.name);
-		entry.find('.js-time').text(roundTime(user.since));
+		entry.find('.js-time').text(roundTime(user.since)); // TODO "all day"
 		entry.data('name', user.name);
 		dom.list.empty.hide();
 		dom.list.append(entry);
