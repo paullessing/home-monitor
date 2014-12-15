@@ -1,43 +1,63 @@
 @import 'reset';
 
+html {
+	//width: 1024px;
+	//height: 768px;
+	height: 100%;
+	overflow: hidden;
+	background-color: white;
+}
+
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 $body-padding-h: 20px;
 
 .body {
 	background-color: #bfdfff;
+	color: #222;
+	height: 100%;
+	overflow: hidden;
+	
+	font-size: 30px;
 }
 
 .title {
-	font-size: 100px;
+	font-size: 2.5em;
 	font-weight: bold;
-	margin-bottom: 30px;
-	padding: 40px $body-padding-h;
+	font-family: Montserrat;
+	font-weight: 700;
 	background-color: #004f9e;
 	color: white;
+
+	padding: 50px $body-padding-h;
+	margin-bottom: 0.6em;
+	
+	box-shadow: 0 -2px 5px 4px rgba(50, 50, 50, 0.5);
 }
 
 .home-title {
-	font-size: 60px;
-	font-weight: bold;
-	margin-bottom: 30px;
-	padding: 0 $body-padding-h;
+	font-size: 1em;
+	font-weight: 300;
 	font-style: italic;
+	margin-bottom: 1em;
+	padding: 0 $body-padding-h;
 }
 
 .home-list {
-	font-size: 70px;
-	font-weight: bold;
 	padding: 0 $body-padding-h;
 }
 .home-list-entry {
-	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 1.5em;
+	margin-bottom: 50px;
 	margin-left: 15px;
 }
 .home-list-entry-time {
 	font-size: 0.5em;
-	font-weight: normal;
+	font-weight: 300;
 	font-style: italic;
+	position: relative;
+	bottom: 1px;
 }

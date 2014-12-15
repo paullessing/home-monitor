@@ -1,5 +1,6 @@
 $(function() {
-	var WELCOME_TIMEOUT = 10000;
+	var WELCOME_TIMEOUT = 10000; // 10 * 60 * 1000;
+	var TIME_BEFORE_ALL_DAY = 8 * 3600 * 1000;
 	
 	var socket = io();
 	var users = [];
@@ -93,14 +94,18 @@ $(function() {
 	function addListEntry(user) {
 		var entry = templates.listEntry.clone();
 		entry.find('.js-name').text(user.name);
-		entry.find('.js-time').text(roundTime(user.since)); // TODO "all day"
+		entry.find('.js-time').text(convertTime(user.since));
 		entry.data('name', user.name);
 		dom.list.empty.hide();
 		dom.list.append(entry);
 	}
 	
-	function roundTime(time) {
+	function convertTime(time) {
+		var now = new Date();
 		time = new Date(time);
+		if (time.getTime() + TIME_BEFORE_ALL_DAY < now.getTime()) {
+			return "All day";
+		}
 		var h = time.getHours();
 		var m = time.getMinutes();
 		m = 5 * Math.round(m / 5);
