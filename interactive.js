@@ -1,3 +1,8 @@
+/**
+ * Interactive test for relay connectivity.
+ * Should be removed before branch merge.
+ */
+
 var relay = require('./lib/relay');
 
 var sys = require("sys");
